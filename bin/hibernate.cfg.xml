@@ -12,7 +12,7 @@
     </property>
 
     <property name="hibernate.connection.url">
-      jdbc:mysql://127.0.0.1/hibernate2
+      jdbc:mysql://127.0.0.1/drugStore
     </property>
     <property name="hibernate.connection.username">
       root
@@ -21,12 +21,17 @@
 
     </property>
     <property name="show_sql">true</property>
-    <property name="hbm2ddl.auto">update</property>
+    <property name="hbm2ddl.auto">create</property>
     <property name="connection.pool_size">10</property>
 
 
-    <mapping class="javaClasses.purches" />
-    <mapping class="javaClasses.purchesDrugs" />
+    <mapping class="javaClasses.purchase" />
+    <mapping class="javaClasses.purchasedDrugs" />
+    <mapping class="javaClasses.Assurance"/>
+    <mapping class="javaClasses.Drug"/>
+    <mapping class="javaClasses.DrugAssurance"/>
+    <mapping class="javaClasses.DrugWarehouse"/>
+   
    
 
 
