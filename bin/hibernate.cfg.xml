@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">
+      org.hibernate.dialect.MySQL5Dialect
+    </property>
+    <property name="hibernate.connection.driver_class">
+      com.mysql.jdbc.Driver
+    </property>
+
+    <property name="hibernate.connection.url">
+      jdbc:mysql://127.0.0.1/drugStore
+    </property>
+    <property name="hibernate.connection.username">
+      root
+    </property>
+    <property name="hibernate.connection.password">
+
+    </property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">create</property>
+    <property name="connection.pool_size">10</property>
+
+
+    <mapping class="javaClasses.purchase" />
+    <mapping class="javaClasses.purchasedDrugs" />
+    <mapping class="javaClasses.Assurance"/>
+    <mapping class="javaClasses.Drug"/>
+    <mapping class="javaClasses.DrugAssurance"/>
+    <mapping class="javaClasses.DrugWarehouse"/>
+    <mapping class="javaClasses.users"/>
+   
+   
+
+
+
+  </session-factory>
+</hibernate-configuration>
