@@ -90,7 +90,7 @@ public class Login extends JFrame {
 			}else{
 				if(user.getAccessLevel()==1){
 					//means this user is a manager
-					ManagerOptionPage manager=new ManagerOptionPage();
+					ManagerOptionPage manager=new ManagerOptionPage(user.getName()+" "+user.getFamily());
 					manager.show();
 					dispose();
 					
